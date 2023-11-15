@@ -58,7 +58,7 @@ public class DoublyLinkedInsertFirst {
 				System.out.println("List is empty");
 				return;
 			}
-			System.out.println("Nodes of doubly linked list - from 1st");
+			System.out.println("Nodes of doubly linked list");
 			
 			while(current!=null) {                                    //its like recursive
 				System.out.println(current.data +"");                //if the current val is not null thn, loop will be 
@@ -69,7 +69,13 @@ public class DoublyLinkedInsertFirst {
 		}
 
 	public static void main(String[] args) {
+		DoublyLinkedInsertFirst d = new DoublyLinkedInsertFirst();
+		d.addNode(1);
+		d.addNode(2);
+		d.addNode(3);
+		d.addFirst(45);
 		
+		d.display();
 
 	}
 
